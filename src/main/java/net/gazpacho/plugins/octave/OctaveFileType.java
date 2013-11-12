@@ -18,7 +18,6 @@ package net.gazpacho.plugins.octave;
 
 import com.intellij.lang.Language;
 import com.intellij.openapi.fileTypes.LanguageFileType;
-import icons.OctaveIcons;
 import org.jetbrains.annotations.NonNls;
 import org.jetbrains.annotations.NotNull;
 

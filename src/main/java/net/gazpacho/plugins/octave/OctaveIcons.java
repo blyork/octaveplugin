@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package icons;
+package net.gazpacho.plugins.octave;
 
 import com.intellij.openapi.util.IconLoader;
 
