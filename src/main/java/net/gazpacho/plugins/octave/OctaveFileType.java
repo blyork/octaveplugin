@@ -27,7 +27,8 @@ import javax.swing.*;
 public class OctaveFileType extends LanguageFileType {
     public static final LanguageFileType OCTAVE_FILE_TYPE = new OctaveFileType();
     public static final Language OCTAVE_LANGUAGE = OCTAVE_FILE_TYPE.getLanguage();
-    @NonNls public static final String DEFAULT_EXTENSION = "m";
+    @NonNls
+    public static final String DEFAULT_EXTENSION = "m";
 
     private OctaveFileType() {
         super(OctaveLanguage.getInstance());
