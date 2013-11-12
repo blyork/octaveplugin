@@ -7,6 +7,9 @@
     <groupId>net.gazpacho.plugins.octave</groupId>
     <artifactId>octaveplugin</artifactId>
     <version>1.0-SNAPSHOT</version>
+
+    <packaging>jar</packaging>
+
     <dependencies>
         <dependency>
             <groupId>com.intellij</groupId>
@@ -15,5 +18,42 @@
         </dependency>
     </dependencies>
 
+    <name>Octave Plugin</name>
+    <description>A plugin that adds Octave support to IntelliJ IDEA.</description>
+    <url>https://github.com/tomconder/octaveplugin</url>
+    <inceptionYear>2012</inceptionYear>
+
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+            <comments>A business-friendly OSS license</comments>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <id>tomconder</id>
+            <name>Tom Conder</name>
+            <email>tomc@gazpacho.net</email>
+            <url>http://gazpacho.net</url>
+            <roles>
+                <role>developer</role>
+            </roles>
+            <timezone>-6</timezone>
+        </developer>
+
+        <developer>
+            <id>blyork</id>
+            <name>Benjamin York</name>
+            <email>benjaminyork@gmail.com</email>
+            <url>https://github.com/blyork</url>
+            <roles>
+                <role>developer</role>
+            </roles>
+            <timezone>-6</timezone>
+        </developer>
+    </developers>
 
 </project>
