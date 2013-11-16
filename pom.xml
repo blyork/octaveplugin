@@ -4,6 +4,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <properties>
+        <intellij-version>12.1.6</intellij-version>
+    </properties>
+
     <groupId>net.gazpacho.plugins.octave</groupId>
     <artifactId>octaveplugin</artifactId>
     <version>1.0-SNAPSHOT</version>
@@ -23,11 +27,33 @@
         </plugins>
     </build>
 
+    <!-- The IDEA_HOME environment variable needs to be set to your local Intellij installation directory. -->
     <dependencies>
         <dependency>
             <groupId>com.intellij</groupId>
+            <artifactId>annotations</artifactId>
+            <version>${intellij-version}</version>
+            <type>jar</type>
+            <scope>system</scope>
+            <systemPath>${env.IDEA_HOME}/lib/annotations.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>com.intellij</groupId>
             <artifactId>openapi</artifactId>
-            <version>7.0.3</version>
+            <version>${intellij-version}</version>
+            <type>jar</type>
+            <scope>system</scope>
+            <systemPath>${env.IDEA_HOME}/lib/openapi.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>com.intellij</groupId>
+            <artifactId>util</artifactId>
+            <version>${intellij-version}</version>
+            <type>jar</type>
+            <scope>system</scope>
+            <systemPath>${env.IDEA_HOME}/lib/util.jar</systemPath>
         </dependency>
     </dependencies>
 
